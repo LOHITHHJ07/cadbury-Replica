@@ -1,0 +1,30 @@
+.gift{
+    height: 600px;
+    width: 800px;
+}
+
+.giftContainer{
+    background-color: #3b0073;
+    width: 100vw;
+}
+
+.title{
+    display: inline-block
+}
+
+.title2{
+    width: 500px;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .gift{
+        height: 300px;  
+        
+    }
+
+    .title2{
+        width: auto;
+    }
+}

@@ -1,24 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Navbar from "../src/Components/Navbar";
+import Banner from "../src/Components/Banner";
+import NewCreation from "./Components/NewCreation";
+import Gifting from "./Components/Gifting";
+import Inbox from "./Components/Inbox";
+import Competiton from "./Components/Competiton";
+import Promotion from "./Components/Promotion";
+import Brands from "./Components/Brands";
+import Visit from "./Components/Visit";
+import Contact from "./Components/Contact";
+import Stories from "./Components/Stories";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  
+   <section> <Navbar></Navbar></section> 
+     <section ><Banner></Banner></section>
+      <section > <NewCreation></NewCreation></section>
+      <section><Gifting></Gifting></section>
+      <section>
+      <video  autoPlay muted loop className=" inset-0  object-cover h-full w-full">
+        <source src="https://videos.ctfassets.net/pmzhtobns06n/2H1d9erd4bkNNwi5x7IKkW/c95acb130d1d9a567eca8f608e693cdb/Purple_wave_Desktop_SectionBreaker_1440x600_v3_03.mp4" type="video/mp4" /> 
+      </video>
+      </section>
+      <section><Inbox></Inbox></section>
+      <section><Competiton></Competiton></section>
+      <section><Promotion></Promotion></section>
+      <section><Brands></Brands></section>
+      <section><Stories></Stories></section>
+      <section><Visit></Visit></section>
+      <section><Contact></Contact></section>
+  
     </div>
   );
 }

@@ -1,0 +1,10 @@
+
+.bg-nav{
+    background-color: #441f6e;
+}
+
+/* Example of increased specificity */
+/* #mainMenu li:hover {
+    border-bottom: 2px solid black !important;
+  }
+   */

@@ -1,0 +1,23 @@
+.newBrands{
+    color:#4b0983;
+    letter-spacing: .08em;
+ }
+ .description{
+    padding-top: 20px;
+    font-weight: 200px;
+    letter-spacing: 1px;
+    width: 550px;
+ }
+
+
+
+ @media screen and (max-width: 650px) {
+    .description{
+       
+        width: auto;
+     }
+    
+
+  
+  }
+
