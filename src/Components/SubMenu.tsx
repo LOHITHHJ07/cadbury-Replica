@@ -11,7 +11,7 @@ interface SubmenuProps {
 
 const Submenu: React.FC<SubmenuProps> = ({ menus }) => {
   return (
-    <div className='subMenu  flex flex-row items-start justify-center lg:gap-x-4  py-12 w-auto  h-full lg:w-full   '>
+    <div className='subMenu  flex flex-row items-start justify-center mt-16 lg:gap-x-4  py-12 w-auto  h-full lg:w-full   '>
       {menus.map((menu, index) => (
         <div key={index} className='flex flex-col  '>
           <h3 className='navheading  text-l py-6 uppercase'>{menu.heading}</h3>

@@ -10,6 +10,7 @@ import Brands from "./Components/Brands";
 import Visit from "./Components/Visit";
 import Contact from "./Components/Contact";
 import Stories from "./Components/Stories";
+import Wall from "./Components/Wall";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <section><Competiton></Competiton></section>
       <section><Promotion></Promotion></section>
       <section><Brands></Brands></section>
+      <section><Wall></Wall></section>
       <section><Stories></Stories></section>
       <section><Visit></Visit></section>
       <section><Contact></Contact></section>

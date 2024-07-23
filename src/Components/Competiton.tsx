@@ -7,13 +7,13 @@ const isMedium = window.innerWidth <= 850;
 const Competiton: React.FC<CompetitonProps> = ({}) => {
   return (
     <div className="image relative ">
-      <div className=" flex flex-col items-center justify-center mb-6 pt-72 lg:pt-56 text-white    px-4 ">
+      <div className=" flex flex-col items-center lett justify-center mb-6 pt-72 lg:pt-48 text-white    px-4 ">
         <div className="z-30">
           <h1 className=" heading inblock border-y-2 z-30 mb-6 text-xl lg:text-2xl uppercase">
             Competition
           </h1>
         </div>
-        <h1 className="title1 text-center text-2xl lg:text-4xl z-30 ">
+        <h1 className="title1 tracking-wider text-center text-2xl lg:text-4xl z-30 ">
           MATCH THE MINUTE TO WIN IT
         </h1>
         <p className="description text-center mb-4  z-30 ">

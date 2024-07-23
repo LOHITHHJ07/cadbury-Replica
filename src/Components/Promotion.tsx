@@ -6,7 +6,7 @@ const Promotion: React.FC<PromotionProps> = ({}) => {
 
     return (
         <div className="relative ">
-        <div className="InboxContainer flex flex-col items-center pt-96 pb-4 justify-center text-white    lg:pt-48  px-4 ">
+        <div className="InboxContainer flex flex-col items-center pt-64 pb-4 justify-center text-white    lg:py-28  px-4 ">
           <div className="z-30">
             <h1 className=" PromotionTitle text-color-white  inblock border-y-2 z-30 mb-6 text-2xl uppercase">
               Promotion

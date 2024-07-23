@@ -142,29 +142,29 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
       >
         {islarge ? (
           <div id="hamburger" className="flex flex-row items-center w-full justify-between py-4 px-4 z-40 ">
-            <img src={logo} className="h-16 " alt="cadbury" />
+            <img src={logo} className="h-12 " alt="cadbury" />
             <img
               src={isOpen ? close : menu}
               onClick={toggleMenu}
-              className="h-10  "
+              className=" h-8 lg:h-10  "
               alt="cadbury"
             />
           </div>
         ) : (
-          <div id="Nav" className=" text-l flex flex-row items-center  px-36 gap-x-16  py-5 w-full text-white z-40  ">
+          <div id="Nav" className=" text-l flex flex-row items-center  px-36 gap-x-16  py-6 w-full text-white z-40  ">
             <div className="z-40 h-full flex justfy-center items-center max-w-[267px] tb:max-w-[271px] ">
               <img src={logo} className="h-10 lg:h-20 " alt="cadbury" />
             </div>
-            <ul id="mainMenu" className="flex flex-row text- font-semibold  gap-x-8 ">
+            <ul id="mainMenu" className="flex flex-row  font-semibold gap-x-8 ">
               <li
-                className="flex "
+                className="flex  "
                 onMouseEnter={() => {
                   handleMouseEnter("about");
                   
                 }}
                 onMouseLeave={() => handleMouseLeave("about")}
               >
-                <a href="" className="cursor-pointer">
+                <a href="" className="cursor-pointer ">
                   ABOUT  
                   {showSubMenu.about?<i className="fa-solid fa-chevron-up ml-2" style={{color:"#d8a246"}}>
                   </i>:
@@ -173,7 +173,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
                 <SubMenu menus={AboutData}></SubMenu>
               </li>
               <li
-                className="flex  "
+                className="flex "
                 onMouseEnter={() => handleMouseEnter("explore")}
                 onMouseLeave={() => handleMouseLeave("explore")}
               >
@@ -212,9 +212,9 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
                 <a href="">CADBURY FC</a>
               </li>
             </ul>
-            <div id="search" className=" flex z-40 ">
+            <div id="search" className=" flex z-40 mb-4 ml-4 ">
               <img src={search} className="h-4 mt-1 mr-2" alt="search" />
-              <span className="inline-block ">Search</span>
+              <span className="inline-block font-mono font-thin  text-gray-300">Search</span>
             </div>
           </div>
         )}
